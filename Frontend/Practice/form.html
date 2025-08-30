@@ -6,56 +6,126 @@
     <title>Form</title>
     <style>
       body {
-        background-color: bisque;
+        background-image: url("https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: no-repeat;
+        background-color: white;
+        background-size: 100%;
+        /* background-attachment: fixed; */
       }
-      p label {
-        color: cornflowerblue;
+      .main-container {
+        backdrop-filter: blur(13px);
+        width: 30%;
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 5px;
+      }
+      .input-group {
+        color: white;
+        padding: 5px;
+        margin-bottom: 3px;
+      }
+      .input-group h2 {
+        padding: none;
+      }
+      .input {
+        color: white;
+        padding: 10px;
+        margin-bottom: 3px;
+      }
+      .input input {
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+        outline: none;
+        color: #fff;
+      }
+      input::placeholder {
+        color: #fff;
+      }
+      .input-group input {
+        background-color: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+        outline: none;
+        color: #fff;
+      }
+      .input-group select {
+        background-color: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+        outline: none;
+        color: #fff;
+      }
+      button {
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 7%;
+        outline: none;
+        color: #fff;
       }
     </style>
   </head>
   <body>
-    <form action="./login.html">
-      <p>
+    <form action="./login.html" class="main-container">
+      <div class="input-group">
+        <h2>Registration Form</h2>
+      </div>
+      <div class="input">
         <label for="">Name</label>
-        <input type="text" placeholder="Enter your name" />
-      </p>
-      <p>
+        <div class="enter">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+      </div>
+      <div class="input">
         <label for="">Email</label>
-        <input type="email" placeholder="Enter your email" />
-      </p>
-      <p>
+        <div class="enter">
+          <input type="email" placeholder="Enter your email" />
+        </div>
+      </div>
+      <div class="input">
         <label for="">Password</label>
-        <input type="password" placeholder="Enter your password" />
-      </p>
-      <p>
+        <div class="enter">
+          <input type="password" placeholder="Enter your password" />
+        </div>
+      </div>
+      <div class="input">
         <label for="">Re-enter password</label>
-        <input type="password" placeholder="Re-enter your password" />
-      </p>
-      <p>
+        <div class="enter">
+          <input type="password" placeholder="Re-enter your password" />
+        </div>
+      </div>
+      <div class="input-group">
         <input type="radio" name="gender" id="male" />
         <label for="male">Male</label>
         <input type="radio" name="gender" id="female" />
         <label for="female">Female</label>
-      </p>
-      <p>
+      </div>
+      <div class="input-group">
         <label for="">Date of birth</label>
         <input type="date" />
-      </p>
-      <p>
+      </div>
+      <div class="input-group">
         <label for="">Upload a picture</label>
         <input type="file" />
-      </p>
-      <p>
+      </div>
+      <div class="input-group">
         <select name="" id="">
           <option value="">Select your city</option>
           <option value="">Vijayawada</option>
           <option value="">Hyderabad</option>
         </select>
-      </p>
-      <p>
+      </div>
+      <div class="input-group">
         <label for="">Select your highest education qualification</label>
-      </p>
-      <p>
+      </div>
+      <div class="input-group">
         <input type="checkbox" id="10th" />
         <label for="10th">10th</label>
         <input type="checkbox" id="12th" />
@@ -64,10 +134,10 @@
         <label for="ug">UG</label>
         <input type="checkbox" id="pg" />
         <label for="pg">PG</label>
-      </p>
-      <p>
+      </div>
+      <div class="input-group">
         <button>Submit</button>
-      </p>
+      </div>
     </form>
   </body>
 </html>
